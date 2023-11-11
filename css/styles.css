@@ -1,0 +1,64 @@
+html, body, * {
+   box-sizing: border-box;
+   color: white;
+   font-family: sans-serif;
+}
+
+body {
+   background: #000000;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+h1 {
+   margin-top: 150px;
+   font-size: 3rem;
+   color: #fca311;
+}
+.container > h2 {
+   margin-top: 150px;
+   font-size: 4rem;
+   
+}
+
+.loginForm {
+   width: 30%;
+   margin: auto;
+   background: #222;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   padding: 20px;
+   text-align: start;
+   border-radius: 10px;
+   font-size: 1.2rem;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agregar una sombra para resaltar el formulario */
+}
+
+.loginForm  > h2 {
+   background: none;
+   font-size: 1.5rem;
+}
+
+#loginSubmitButton, #signUpSubmit {
+   background: #fca311;
+   padding: 10px 20px; /* Reducir el padding del botón */
+   font-size: 1.2rem; /* Reducir el tamaño del texto del botón */
+}
+
+.loginForm > input {
+   padding: 10px; /* Reducir el relleno para hacerlo más compacto */
+   margin: 10px 0; /* Añadir margen entre los campos de entrada */
+   width: 100%;
+   border: none; /* Quitar los bordes de los campos de entrada */
+   background: #000000;
+   color: white; /* Texto blanco en los campos de entrada */
+   border-radius: 5px; /* Agregar un pequeño borde redondeado a los campos de entrada */
+   padding: 20px 0;
+}
+
+

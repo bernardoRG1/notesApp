@@ -1,0 +1,202 @@
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+    width: 100%;
+  }
+  
+  .header {
+    background-color: #000000;
+    color: #fca311;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 0;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    font-weight: 600;
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+
+  }
+
+  
+  .sidebar {
+    border-radius: 10px;
+    min-height: 500px;
+    width: 25%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: -20px;
+  }
+
+  .sidebar > h2 {
+    font-weight: 400;
+    margin-left: 10px;
+    color: #fca311;
+  }
+  
+  .note-list {
+    width: 90%;
+    list-style: none;
+    padding: 0;
+    max-height: 900px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .note-list::-webkit-scrollbar {
+    width: 10px; /* Ancho del scrollbar */
+  }
+  .note-list::-webkit-scrollbar-thumb {
+    background-color: #fca311; /* Color de la barra de desplazamiento */
+    border-radius: 5px; /* Borde redondeado de la barra de desplazamiento */
+  }
+  
+  .note-list::-webkit-scrollbar-track {
+    background-color: #333; /* Color del área del scrollbar que no está ocupada por la barra de desplazamiento */
+  }
+
+  .note-list li {
+    width: 90%;
+    Height: 100px;
+    padding: 15px 20px; 
+    margin-bottom: 10px;
+    border-radius: 8px; 
+    background: #222;
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+  
+  }
+
+  .note-list li:hover {
+    background-color: #333; 
+  }
+  
+  .note-list a {
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+
+  }
+
+  .note-list a > p {
+    margin-top: -10px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .note-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  #editor {
+    background: #222;
+    height: 300px;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 20px 0;
+  }
+
+
+
+  .note-content:focus {
+    border: none;
+  }
+  
+
+  .content > button{
+    margin-top: 20px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    
+
+    transition: background-color 0.1s ease, color 0.1s ease;
+  }
+
+  
+
+#noteSubmit:hover, #noteUpdate:hover, #noteDelete:hover , #cerrarSesionInput > a:hover{
+    opacity: 0.8; 
+    cursor: pointer;
+  }
+
+  
+  #cerrarSesionInput  {
+    border: none;
+    font-size: 1.3rem;
+    padding: 0;
+    margin-top: -20px;
+    background: none;
+
+  }
+
+  #cerrarSesionInput > a {
+    background: rgb(195, 40, 40);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  #noteSubmit {
+    background: #fca311;
+  }
+
+  #noteDelete {
+    margin-left: 10px;
+    background: rgb(255, 66, 66);
+  }
+
+  #noteUpdate {
+    background: rgb(55, 207, 110); 
+    margin-left: 10px;
+  }
+
+
+  #nodeNewEkement  {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nodeNewEkement > i{
+    width: 50px;
+    font-size: 4rem;
+    color: #fca311;
+    font-weight: bold;
+  }
