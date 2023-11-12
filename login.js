@@ -21,7 +21,7 @@ loginSubmitButton.addEventListener("click",async (e) => {
     const userId = userCredentials.user.uid;
 
         // El usuario está autenticado, redirige a la página de notas
-        window.location.href = `./bienvenido.html?userId=${userId}`;
+        window.location.href = `./html/bienvenido.html?userId=${userId}`;
       
 
   } catch (error) {
