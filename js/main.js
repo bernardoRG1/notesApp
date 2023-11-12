@@ -15,4 +15,5 @@ signUpSubmit.addEventListener("click",async (e) => {
    const emailValue = signUpEmailInput.value;
    const passValue = signUpPasswordInput.value
    await createUserWithEmailAndPassword(auth, emailValue, passValue);
+   alert('usuario creado con exito')
 })
